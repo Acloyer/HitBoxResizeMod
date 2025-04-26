@@ -1,59 +1,71 @@
--------------------------------------------
-Source installation information for modders
--------------------------------------------
-This code follows the Minecraft Forge installation methodology. It will apply
-some small patches to the vanilla MCP source code, giving you and it access 
-to some of the data and functions you need to build a successful mod.
+# AutoGG Mod for Minecraft 1.8.9
 
-Note also that the patches are built against "unrenamed" MCP source code (aka
-srgnames) - this means that you will not be able to read them directly against
-normal code.
+## 📦 Description
+**AutoGG** is a simple Minecraft 1.8.9 Forge mod that allows you to increase player hitbox size (reach area) using an easy in-game command.  
+Useful for improving visibility of player hitboxes, especially in PvP environments.
 
-Source pack installation information:
+✅ **Client-side only** — does not require installation on the server.
 
-Standalone source installation
-==============================
+---
 
-Step 1: Open your command-line and browse to the folder where you extracted the zip file.
+## 🛠️ Features
+- Adjust player hitbox scaling directly in-game.
+- Simple command to change the multiplier on the fly:
+/autogg [multiplier]
 
-Step 2: Once you have a command window up in the folder that the downloaded material was placed, type:
+makefile
+Copy
+Edit
+Example:
+/autogg 1.5
 
-Windows: "gradlew setupDecompWorkspace"
-Linux/Mac OS: "./gradlew setupDecompWorkspace"
+markdown
+Copy
+Edit
+This sets the hitbox multiplier to **1.5×**.
 
-Step 3: After all that finished, you're left with a choice.
-For eclipse, run "gradlew eclipse" (./gradlew eclipse if you are on Mac/Linux)
+- Hitbox rendering (ESP-style visualization).
+- Extended reach calculation without server-side modification.
+- Lightweight and easy to use.
 
-If you preffer to use IntelliJ, steps are a little different.
-1. Open IDEA, and import project.
-2. Select your build.gradle file and have it import.
-3. Once it's finished you must close IntelliJ and run the following command:
+---
 
-"gradlew genIntellijRuns" (./gradlew genIntellijRuns if you are on Mac/Linux)
+## 💾 Installation
 
-Step 4: The final step is to open Eclipse and switch your workspace to /eclipse/ (if you use IDEA, it should automatically start on your project)
+1. Download and install **Minecraft Forge 1.8.9**.
+2. Download the latest **AutoGG.jar** from the [Releases](https://github.com/yourusername/AutoGG/releases) page.
+3. Place the `.jar` file into your:
+.minecraft/mods/
 
-If at any point you are missing libraries in your IDE, or you've run into problems you can run "gradlew --refresh-dependencies" to refresh the local cache. "gradlew clean" to reset everything {this does not effect your code} and then start the processs again.
+yaml
+Copy
+Edit
+4. Launch Minecraft using the Forge profile.
 
-Should it still not work, 
-Refer to #ForgeGradle on EsperNet for more information about the gradle environment.
+---
 
-Tip:
-If you do not care about seeing Minecraft's source code you can replace "setupDecompWorkspace" with one of the following:
-"setupDevWorkspace": Will patch, deobfusicated, and gather required assets to run minecraft, but will not generated human readable source code.
-"setupCIWorkspace": Same as Dev but will not download any assets. This is useful in build servers as it is the fastest because it does the least work.
+## 📌 Commands
 
-Tip:
-When using Decomp workspace, the Minecraft source code is NOT added to your workspace in a editable way. Minecraft is treated like a normal Library. Sources are there for documentation and research purposes and usually can be accessed under the 'referenced libraries' section of your IDE.
+| Command                 | Description                               |
+|-------------------------|-------------------------------------------|
+| `/autogg [value]`        | Sets the hitbox multiplier (float). Example: `/autogg 1.3` |
+| `/autoggadd [value]`     | Adds the given value to the current multiplier. Example: `/autoggadd 0.2` |
 
-Forge source installation
-=========================
-MinecraftForge ships with this code and installs it as part of the forge
-installation process, no further action is required on your part.
+The default multiplier is **1.0** (normal hitbox). Increase it carefully to avoid rendering glitches.
 
-LexManos' Install Video
-=======================
-https://www.youtube.com/watch?v=8VEdtQLuLO0&feature=youtu.be
+---
 
-For more details update more often refer to the Forge Forums:
-http://www.minecraftforge.net/forum/index.php/topic,14048.0.html
+## ⚠️ Notes
+- This mod modifies hitbox detection and may not work correctly on servers with strong anti-cheat.
+- Works only with **Minecraft 1.8.9 Forge**.
+
+---
+
+## 👤 Credits
+Created by **Acloyer (Rafig)**.
+
+---
+
+## 📃 License
+This project is licensed under the Forge mod distribution terms.  
+Feel free to use or modify for personal use. Commercial use is not allowed without permission.
