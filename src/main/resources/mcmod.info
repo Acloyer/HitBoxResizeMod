@@ -1,0 +1,14 @@
+[
+  {
+    "modid": "autogg",
+    "name": "AutoGG",
+    "description": "Automatically says GG after a game",
+    "version": "1.0",
+    "mcversion": "1.8.9",
+    "authorList": ["Acloyer"],
+    "url": "",
+    "updateUrl": "",
+    "screenshots": [],
+    "logoFile": ""
+  }
+]
