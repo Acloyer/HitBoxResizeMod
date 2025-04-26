@@ -2,13 +2,17 @@
   {
     "modid": "autogg",
     "name": "AutoGG",
-    "description": "Automatically says GG after a game",
-    "version": "1.0",
+    "description": "Mod to change radius and allow extended reach via /autogg [float value] command.",
+    "version": "2.3",
     "mcversion": "1.8.9",
-    "authorList": ["Acloyer"],
     "url": "",
     "updateUrl": "",
+    "authorList": ["Acloyer"],
+    "credits": "Created by Acloyer",
+    "logoFile": "",
     "screenshots": [],
-    "logoFile": ""
+    "requiredMods": [],
+    "dependencies": [],
+    "useDependencyInformation": false
   }
 ]
