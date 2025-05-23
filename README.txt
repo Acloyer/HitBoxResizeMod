@@ -30,7 +30,7 @@ This sets the hitbox multiplier to **1.5×**.
 ## 💾 Installation
 
 1. Download and install **Minecraft Forge 1.8.9**.
-2. Download the latest **AutoGG.jar** from the [Releases](https://github.com/yourusername/AutoGG/releases) page.
+2. Download the latest **AutoGG.jar** from the [Releases](https://github.com/Acloyer/HitboxMod/releases) page.
 3. Place the `.jar` file into your:
 .minecraft/mods/
 
