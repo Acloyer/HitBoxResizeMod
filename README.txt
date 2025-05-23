@@ -19,12 +19,9 @@ Edit
 Example:
 /autogg 1.5
 
-markdown
-Copy
-Edit
 This sets the hitbox multiplier to **1.5×**.
 
-- Hitbox rendering (ESP-style visualization).
+- Resized Hitboxes are HIDDEN.
 - Extended reach calculation without server-side modification.
 - Lightweight and easy to use.
 
@@ -37,9 +34,6 @@ This sets the hitbox multiplier to **1.5×**.
 3. Place the `.jar` file into your:
 .minecraft/mods/
 
-yaml
-Copy
-Edit
 4. Launch Minecraft using the Forge profile.
 
 ---
@@ -49,7 +43,6 @@ Edit
 | Command                 | Description                               |
 |-------------------------|-------------------------------------------|
 | `/autogg [value]`        | Sets the hitbox multiplier (float). Example: `/autogg 1.3` |
-| `/autoggadd [value]`     | Adds the given value to the current multiplier. Example: `/autoggadd 0.2` |
 
 The default multiplier is **1.0** (normal hitbox). Increase it carefully to avoid rendering glitches.
 
